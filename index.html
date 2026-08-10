@@ -1,87 +1,21 @@
 <!doctype html>
 <html lang="he" dir="rtl">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0b2545" />
-  <title>יוון 2026 | מסלול הטיול</title>
-  <meta name="description" content="מסלול טיול משפחתי ביוון, 16–24 באוקטובר 2026: לוטראקי, יואנינה, זגוריה, מטאורה, וולוס ואתונה." />
-  <link rel="preconnect" href="https://unpkg.com" />
-  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" crossorigin="" />
-  <link rel="stylesheet" href="styles.css" />
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#b83280">
+<title>יוון 2026 | מסלול הטיול</title>
+<link rel="preconnect" href="https://unpkg.com"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header class="hero">
-    <nav class="topbar container">
-      <a class="brand" href="#top">יוון 2026</a>
-      <div class="toplinks">
-        <a href="#overview">מסלול</a>
-        <a href="#hotels">מלונות</a>
-        <a href="#budget">תקציב</a>
-      </div>
-    </nav>
-    <div class="hero-content container" id="top">
-      <p class="eyebrow">4 מטיילים · רכב שכור · 8 לילות</p>
-      <h1>מסע בצפון יוון ואתונה</h1>
-      <p class="hero-copy">16–24 באוקטובר 2026 · לוטראקי, זגוריה, מטאורה, פיליון ואתונה</p>
-      <div class="hero-actions">
-        <a class="btn primary" href="#day-1">התחלת המסלול</a>
-        <a class="btn ghost" href="#general-map">המפה הכללית</a>
-      </div>
-    </div>
-  </header>
-
-  <main>
-    <section class="section container" id="overview">
-      <div class="section-heading">
-        <div><p class="eyebrow dark">תמונה מלאה</p><h2>המסלול במבט אחד</h2></div>
-        <p>לחיצה על יום פותחת את פירוט התחנות, המפה, הניווט והעלות המשוערת.</p>
-      </div>
-      <div id="day-cards" class="day-cards"></div>
-    </section>
-
-    <section class="section map-section" id="general-map">
-      <div class="container">
-        <div class="section-heading light">
-          <div><p class="eyebrow">מפה אינטראקטיבית</p><h2>כל הטיול על מפה אחת</h2></div>
-          <p>הקו מחבר את נקודות הלינה והאזורים המרכזיים לפי סדר הטיול.</p>
-        </div>
-        <div id="overview-map" class="map large" aria-label="מפה כללית של המסלול"></div>
-      </div>
-    </section>
-
-    <section class="section container" id="days">
-      <div id="day-sections"></div>
-    </section>
-
-    <section class="section soft" id="hotels">
-      <div class="container">
-        <div class="section-heading">
-          <div><p class="eyebrow dark">לינה</p><h2>המלונות לפי סדר הנסיעה</h2></div>
-          <p>כל כרטיס כולל קישור ניווט ישיר.</p>
-        </div>
-        <div id="hotel-grid" class="hotel-grid"></div>
-      </div>
-    </section>
-
-    <section class="section container" id="budget">
-      <div class="section-heading">
-        <div><p class="eyebrow dark">4 אנשים</p><h2>תקציב יומי משוער</h2></div>
-        <p>הסכומים כוללים כניסות, אגרות, חניה ואוכל בסיסי; אינם כוללים מלונות, רכב שכור ודלק.</p>
-      </div>
-      <div id="budget-table" class="budget-table"></div>
-      <div class="notice">המחירים ושעות הפתיחה עשויים להשתנות עד אוקטובר 2026. מומלץ לבדוק שוב כשבוע לפני הנסיעה.</div>
-    </section>
-  </main>
-
-  <footer>
-    <div class="container footer-inner">
-      <div><strong>יוון 2026</strong><span>מסלול אישי למשפחת צבי</span></div>
-      <a href="#top">חזרה למעלה ↑</a>
-    </div>
-  </footer>
-
-  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" crossorigin=""></script>
-  <script src="app.js"></script>
-</body>
-</html>
+<header class="hero"><div class="container"><div class="flagline">🇬🇷 יוון · 16–24.10.2026 · 4 מטיילים</div><h1>יוון 2026</h1><p>לוטראקי · יואנינה וזגוריה · מטאורה · פיליון · אתונה</p></div></header>
+<nav class="day-nav-wrap"><div id="day-nav" class="day-nav container"></div></nav>
+<main class="container">
+<section class="quickbar"><button id="overviewBtn" class="pill">🗺️ מפה כללית</button><button id="hotelsBtn" class="pill">🏨 מלונות</button></section>
+<section id="overview" class="panel"><div class="panel-head"><h2>מפת הטיול</h2><p>כל אזורי הלינה והמסלול המרכזי.</p></div><div id="overview-map" class="map"></div></section>
+<section id="day-view" class="panel"></section>
+<section id="hotels" class="panel hidden"><div class="panel-head"><h2>המלונות</h2><p>ללא מחירים — רק מה שצריך לניווט ולתכנון.</p></div><div id="hotel-grid" class="hotel-grid"></div></section>
+</main>
+<footer>יוון 2026 · מסלול אישי · GitHub Pages</footer>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js"></script>
+</body></html>
