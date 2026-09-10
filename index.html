@@ -5,7 +5,7 @@
 <meta name="theme-color" content="#0a9ea6">
 <title>יוון 2026 | מסלול הטיול</title>
 <link rel="preconnect" href="https://unpkg.com"><link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
-<link rel="stylesheet" href="styles.css?v=20260910-v2">
+<link rel="stylesheet" href="styles.css?v=20260910-v3">
 </head>
 <body>
 <header class="hero"><div class="container"><div class="flagline">🇬🇷 יוון · 16–24.10.2026 · 4 מטיילים</div><h1>יוון 2026</h1><p>לוטראקי · יואנינה וזגוריה · מטאורה · פיליון · אתונה</p></div></header>
@@ -15,13 +15,27 @@
 <section id="overview" class="panel hidden"><div class="panel-head"><h2>מפת הטיול</h2><p>כל אזורי הלינה והמסלול המרכזי.</p></div><div id="overview-map" class="map"></div></section>
 <section id="day-view" class="panel"></section>
 <section id="hotels" class="panel hidden"><div class="panel-head"><h2>המלונות</h2><p>ללא מחירים — רק ניווט ומיקום.</p></div><div id="hotel-grid" class="hotel-grid"></div></section>
-<section id="documents" class="panel hidden"><div class="panel-head"><h2>📄 מסמכים</h2><p>כל המסמכים החשובים לטיול זמינים כאן גם מהטלפון.</p></div><div class="docs-grid">
-<a class="doc-card" href="documents/מסלול_יוון_סופי_עם_ערבים_חניה_ומפות.xlsx" download><b>📊 מסלול יוון – Excel מלא</b><span>מסלול, מפות יומיות, ערבים, חניה וקישורי ניווט</span></a>
-<a class="doc-card" href="documents/insurance-certificate.pdf" target="_blank"><b>🛡️ אישור ביטוח נסיעות</b><span>אישור Phoenix Smart Travel לתאריכי הטיול</span></a>
-<a class="doc-card" href="documents/travel-insurance-policy.pdf" target="_blank"><b>📑 פוליסת ביטוח נסיעות מלאה</b><span>פרטי הפוליסה, הכיסויים וההרחבות</span></a>
-<a class="doc-card" href="documents/car-rental-voucher.pdf" target="_blank"><b>🚗 וואוצ׳ר השכרת רכב</b><span>Budget Greece / Auto Europe – איסוף והחזרה בשדה התעופה באתונה</span></a>
-</div></section>
+<section id="documents" class="panel hidden">
+  <div class="panel-head docs-head">
+    <h2>📄 מסמכים לטיול</h2>
+    <p>כל המסמכים החשובים זמינים בלחיצה אחת גם מהטלפון. הקבצים נמצאים ישירות באתר כדי למנוע שגיאות 404.</p>
+  </div>
+  <div class="docs-rubrics">
+    <a class="doc-rubric insurance" href="insurance-certificate.pdf" target="_blank" rel="noopener">
+      <span class="doc-icon">🛡️</span><span><b>אישור ביטוח נסיעות</b><small>Phoenix Smart Travel · אישור באנגלית</small></span><span class="doc-open">פתיחה ›</span>
+    </a>
+    <a class="doc-rubric policy" href="travel-insurance-policy.pdf" target="_blank" rel="noopener">
+      <span class="doc-icon">📑</span><span><b>פוליסת ביטוח מלאה</b><small>פרטי הביטוח, הכיסויים וההרחבות</small></span><span class="doc-open">פתיחה ›</span>
+    </a>
+    <a class="doc-rubric car" href="car-rental-voucher.pdf" target="_blank" rel="noopener">
+      <span class="doc-icon">🚗</span><span><b>וואוצ׳ר השכרת רכב</b><small>Budget Greece / Auto Europe · איסוף והחזרה באתונה</small></span><span class="doc-open">פתיחה ›</span>
+    </a>
+    <a class="doc-rubric excel" href="greece-itinerary.xlsx" download>
+      <span class="doc-icon">📊</span><span><b>מסלול יוון - Excel</b><small>מסלול יומי, מפות, חניות וקישורי ניווט</small></span><span class="doc-open">הורדה ›</span>
+    </a>
+  </div>
+</section>
 </main>
 <footer>יוון 2026 · מסלול אישי · GitHub Pages</footer>
-<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js?v=20260910-v2"></script>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script><script src="app.js?v=20260910-v3"></script>
 </body></html>
