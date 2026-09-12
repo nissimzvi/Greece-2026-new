@@ -1,11 +1,23 @@
-# Greece-2026 — GitHub Pages
+# Greece-2026-new - GitHub Pages V3
 
-הקבצים מוכנים להעלאה ישירות ל-Repository הקיים `Greece-2026`.
+גרסה עם מפה לכל יום, ניווט Waze/Google Maps, מסלולי ערב ומסמכים.
 
-## עדכון האתר הקיים
-1. פתח את ה-Repository ב-GitHub.
-2. העלה והחלף את `index.html`, `app.js`, `styles.css` (ואפשר גם README.md).
-3. Commit changes.
-4. GitHub Pages יתעדכן אוטומטית תוך דקה-שתיים.
+## חשוב בעדכון GitHub
+העלה את כל הקבצים שבתיקייה/ZIP ישירות ל-root של Repository `Greece-2026-new`.
+אין צורך בתיקיית documents.
 
-אין צורך לשנות Settings → Pages.
+הקבצים שצריכים להופיע ב-root:
+- index.html
+- app.js
+- styles.css
+- insurance-certificate.pdf
+- travel-insurance-policy.pdf
+- car-rental-voucher.pdf
+- greece-itinerary.xlsx
+- README.md
+
+לאחר Commit changes, GitHub Pages מתעדכן אוטומטית.
+
+
+## עדכון V4
+יום 22.10: Makrinitsa מוגדרת כנקודת חובה - “המרפסת של פיליון”, עם תיאור מורחב. שאר המסלול והמבנה נשארו ללא שינוי.
